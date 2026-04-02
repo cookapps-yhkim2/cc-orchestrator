@@ -1,0 +1,21 @@
+{
+  "name": "unity-orchestrator",
+  "version": "0.1.0",
+  "description": "Multi-agent orchestration system for Unity C# projects — Planner/Implementer/Evaluator loop with sprint contracts and file-based state management",
+  "author": {
+    "name": "Tora"
+  },
+  "repository": "https://github.com/cookapps-yhkim2/unity-orchestrator",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "plugin",
+    "unity",
+    "csharp",
+    "multi-agent",
+    "orchestration",
+    "game-development"
+  ],
+  "skills": "./skills/",
+  "agents": "./agents/"
+}
