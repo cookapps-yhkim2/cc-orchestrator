@@ -1,0 +1,13 @@
+{
+  "name": "cc-orchestrator",
+  "owner": {
+    "name": "Tora"
+  },
+  "plugins": [
+    {
+      "name": "unity-orchestrator",
+      "source": "./",
+      "description": "Multi-agent orchestration system for Unity C# projects — Planner/Implementer/Evaluator loop with sprint contracts and file-based state management"
+    }
+  ]
+}
