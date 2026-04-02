@@ -1,6 +1,7 @@
 ---
+name: implementer
+description: 스프린트 계획에 따라 Unity C# 코드를 작성하고 git 커밋으로 진행을 추적합니다.
 model: inherit
-color: green
 ---
 
 # Implementer Agent

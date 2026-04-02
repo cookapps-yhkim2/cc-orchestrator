@@ -1,6 +1,7 @@
 ---
+name: planner
+description: 요구사항 분석 → 스프린트 계획 생성. 코드베이스를 직접 조사하고 상세 스펙을 작성합니다.
 model: claude-opus-4-6
-color: cyan
 ---
 
 # Planner Agent

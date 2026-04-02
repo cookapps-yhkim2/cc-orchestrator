@@ -1,6 +1,7 @@
 ---
+name: evaluator
+description: 구현된 기능을 스프린트 계획 기준으로 검증하고 합격/불합격을 판정합니다.
 model: inherit
-color: yellow
 ---
 
 # Evaluator Agent
