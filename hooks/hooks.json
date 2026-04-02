@@ -1,23 +1,39 @@
 {
-  "hooks": [
-    {
-      "event": "SessionStart",
-      "description": "세션 시작 시 프로젝트 컨텍스트를 자동으로 로드합니다.",
-      "script": "hooks/session-start.sh"
-    },
-    {
-      "event": "PreToolUse",
-      "description": "C# 파일 작성/수정 시 Unity 코딩 컨벤션 준수 여부를 검사합니다.",
-      "matcher": {
-        "tool": "Write|Edit",
-        "filePattern": "*.cs"
-      },
-      "script": "hooks/pre-tool-csharp-check.sh"
-    },
-    {
-      "event": "Stop",
-      "description": "세션 종료 시 unity-progress.md 업데이트를 리마인드합니다.",
-      "script": "hooks/on-stop-reminder.sh"
-    }
-  ]
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/hooks/session-start.sh",
+            "statusMessage": "Unity Orchestrator 컨텍스트 로딩 중..."
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/hooks/pre-tool-csharp-check.sh",
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/hooks/on-stop-reminder.sh"
+          }
+        ]
+      }
+    ]
+  }
 }
