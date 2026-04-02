@@ -1,5 +1,7 @@
 # Unity Orchestrator
 
+[한국어](README.ko.md)
+
 A multi-agent orchestration plugin for Unity C# game development with Claude Code.
 
 Planner → Implementer → Evaluator loop inspired by GAN architecture — one agent builds, another evaluates, preventing self-congratulatory assessments.
