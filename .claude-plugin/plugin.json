@@ -1,6 +1,6 @@
 {
   "name": "unity-orchestrator",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Multi-agent orchestration system for Unity C# projects — Planner/Implementer/Evaluator loop with sprint contracts and file-based state management",
   "author": {
     "name": "Tora"
