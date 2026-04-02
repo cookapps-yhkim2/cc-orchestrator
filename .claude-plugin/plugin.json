@@ -17,5 +17,9 @@
     "game-development"
   ],
   "skills": "./skills/",
-  "agents": "./agents/"
+  "agents": [
+    "./agents/planner.md",
+    "./agents/implementer.md",
+    "./agents/evaluator.md"
+  ]
 }
