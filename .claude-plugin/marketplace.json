@@ -1,13 +1,20 @@
 {
   "name": "cc-orchestrator",
   "owner": {
-    "name": "Tora"
+    "name": "Tora",
+    "email": "yhkim2@cookapps.com"
+  },
+  "metadata": {
+    "description": "Unity C# 게임 개발을 위한 Multi-Agent Orchestrator 플러그인 마켓플레이스",
+    "version": "0.3.0",
+    "homepage": "https://github.com/cookapps-yhkim2/cc-orchestrator"
   },
   "plugins": [
     {
       "name": "unity-orchestrator",
       "source": "./",
-      "description": "Multi-agent orchestration system for Unity C# projects — Planner/Implementer/Evaluator loop with sprint contracts and file-based state management"
+      "description": "Multi-agent orchestration system for Unity C# projects — Planner/Implementer/Evaluator loop with sprint contracts and file-based state management",
+      "version": "0.3.0"
     }
   ]
 }
